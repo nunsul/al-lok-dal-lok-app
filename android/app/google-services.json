@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1043839855571",
+    "project_id": "al-lok-dal-lok",
+    "storage_bucket": "al-lok-dal-lok.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043839855571:android:860099cc4ef9f8bc8e9d26",
+        "android_client_info": {
+          "package_name": "com.saessak.app_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv9IYLM51DXCPjYczoM9fSIxRmNHMWf34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
