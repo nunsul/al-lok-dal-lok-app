@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:math_demo/login/main_login.dart';
 import 'package:math_demo/screen/splash_screen.dart';
 
 Future<void> main() async {
@@ -33,7 +34,7 @@ class MathRunApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Splash_screen(),
+      home: main_login(),
     );
   }
 }

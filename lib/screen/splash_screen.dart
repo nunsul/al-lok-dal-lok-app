@@ -29,7 +29,7 @@ class _splash_screenState extends State<Splash_screen>{
   @override
   Widget build(BuildContext context) {
   return Scaffold(
-    backgroundColor: Colors.black,
+    backgroundColor: Colors.yellow,
     body: Center(
       child: Text("mathRun",style: TextStyle(fontSize: 40,color: Colors.white),),
     ),
