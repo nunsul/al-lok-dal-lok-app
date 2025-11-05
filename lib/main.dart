@@ -1,29 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
-import 'package:math_demo/login/main_login.dart';
-import 'package:math_demo/screen/splash_screen.dart';
+import 'package:math_demo/login/Main_Login_Screen.dart';
+import 'firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  if (Firebase.apps.isEmpty) {
-    if (kIsWeb) {
-      await Firebase.initializeApp(
-        options: const FirebaseOptions(
-          apiKey: 'YOUR_WEB_API_KEY',                 // 예: AIzaSy...
-          appId: 'YOUR_WEB_APP_ID',                   // 예: 1:719019166826:web:xxxxxxxx
-          messagingSenderId: '719019166826',          // 콘솔 값
-          projectId: 'reroll-a2a74',                  // 콘솔 값
-          authDomain: 'reroll-a2a74.firebaseapp.com', // 콘솔 값
-          storageBucket: 'reroll-a2a74.appspot.com',  // 콘솔 값
-        ),
-      );
-    } else {
-      await Firebase.initializeApp();
-    }
-  }
-
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MathRunApp());
 }
 
@@ -34,7 +18,7 @@ class MathRunApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: main_login(),
+      home: Main_Login_Screen(),
     );
   }
 }

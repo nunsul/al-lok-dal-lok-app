@@ -26,6 +26,13 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
+    - assets/images/login_parts/parts/al_lok_dal_lok.png
+    - assets/images/login_parts/parts/love.png
+    - assets/images/login_parts/parts/math.png
+    - assets/images/login_parts/parts/palette.png
+    - assets/images/login_parts/parts/star.png
+    - assets/images/login_parts/parts/watermelon.png
+    - assets/images/login_parts/parts/wizard.png
 
 
 flutter_native_splash:
