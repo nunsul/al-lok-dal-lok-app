@@ -9,6 +9,8 @@ import 'package:math_demo/screen/main_screen.dart';
 import 'package:math_demo/widget/widget_small.dart';
 import 'package:flutter/services.dart';
 
+import '../screen/Main_back_screen.dart';
+
 class main_login extends StatefulWidget {
   @override
   State<main_login> createState() => _main_loginState();
@@ -78,10 +80,7 @@ class _main_loginState extends State<main_login> {
                                 password: password,
                               );
                               if (!mounted) return;
-                              Navigator.of(context, rootNavigator: true).pushAndRemoveUntil(
-                                MaterialPageRoute(builder: (_) => const main_screen()),
-                                    (route) => false, // 스택 전부 제거
-                              );
+                              Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (_)=>MainBackScreen()), (r)=>false);
                             } on FirebaseAuthException catch (e) {
                               // 디버깅용: 실제 코드 확인
                               debugPrint('Auth error → code: ${e.code}, message: ${e.message}');

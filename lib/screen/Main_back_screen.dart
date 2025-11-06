@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class practice extends StatefulWidget {
-  const practice({super.key});
+class MainBackScreen extends StatefulWidget {
+  const MainBackScreen({super.key});
   @override
-  State<practice> createState() => _MainShellState();
+  State<MainBackScreen> createState() => _MainShellState();
 }
 
-class _MainShellState extends State<practice> {
+class _MainShellState extends State<MainBackScreen> {
   int _index = 0;
   bool _centerSelected = false;
 

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:math_demo/login/sign_up.dart';
 import '../practice.dart';
 import '../screen/Figma_main_body_screen.dart';
+import '../screen/Main_back_screen.dart';
 import 'main_login.dart';
 
 class Main_Login_Screen extends StatelessWidget {
@@ -82,10 +83,7 @@ class Main_Login_Screen extends StatelessWidget {
                 const SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (_) => main_login()),
-                    );
+                   Navigator.push(context, MaterialPageRoute(builder: (_)=>main_login()));
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
@@ -101,10 +99,7 @@ class Main_Login_Screen extends StatelessWidget {
                 const SizedBox(height: 15),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (_) => const Sign_up()),
-                    );
+                    Navigator.push(context, MaterialPageRoute(builder: (_)=>Sign_up()));
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,

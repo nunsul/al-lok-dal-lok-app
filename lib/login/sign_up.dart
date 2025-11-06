@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:math_demo/screen/main_screen.dart';
 
 import '../model/model_firebase.dart';
+import '../screen/Main_back_screen.dart';
 
 class Sign_up extends StatefulWidget{
   const Sign_up({super.key});
@@ -166,10 +167,7 @@ class _practiceState extends State<Sign_up> {
                               const SnackBar(content: Text('회원가입 성공')),
                             );
                             if (!mounted) return;
-                            Navigator.of(context, rootNavigator: true).pushAndRemoveUntil(
-                              MaterialPageRoute(builder: (_) => const main_screen()),
-                                  (route) => false, // 스택 전부 제거
-                            );
+                           Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (_)=>MainBackScreen()), (r)=>false);
 
                           } on FirebaseAuthException catch (e) {
                             if (!mounted) return;
