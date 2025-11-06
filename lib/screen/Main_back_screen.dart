@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../Mypage/My_page.dart';
+
 class MainBackScreen extends StatefulWidget {
   const MainBackScreen({super.key});
   @override
@@ -16,7 +18,7 @@ class _MainShellState extends State<MainBackScreen> {
     _HomePage(),
     _ChatPage(),
     _GamePage(),
-    _ProfilePage(),
+     My_page(),
     _CenterFabPage(),
   ];
 
@@ -180,16 +182,6 @@ class _GamePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const SafeArea(
       child: Center(child: Text('게임 페이지', style: TextStyle(fontSize: 22))),
-    );
-  }
-}
-
-class _ProfilePage extends StatelessWidget {
-  const _ProfilePage();
-  @override
-  Widget build(BuildContext context) {
-    return const SafeArea(
-      child: Center(child: Text('마이 페이지', style: TextStyle(fontSize: 22))),
     );
   }
 }
