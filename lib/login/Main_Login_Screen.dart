@@ -24,46 +24,46 @@ class Main_Login_Screen extends StatelessWidget {
               location_login(
                 'assets/images/login_parts/parts/love.png',
                 x: -45, y: 690, w: 258.02,
-                fromX: -240, fromY: 120,                         // ★ NEW
-                delay: const Duration(milliseconds: 100),        // ★ NEW
+                fromX: -240, fromY: 120,
+                delay: const Duration(milliseconds: 500),
               ),
               location_login(
                 'assets/images/login_parts/parts/palette.png',
                 x: 198, y: 658, w: 258,
-                fromY: 220,                                      // ★ NEW
-                delay: const Duration(milliseconds: 150),        // ★ NEW
+                fromY: 220,
+                delay: const Duration(milliseconds: 500),
               ),
               location_login(
                 'assets/images/login_parts/parts/star.png',
                 x: 180, y: -65, w: 320,
-                fromY: -260,                                     // ★ NEW
-                delay: Duration.zero,                            // ★ NEW
+                fromY: -260,
+                delay: Duration.zero,
               ),
               location_login(
                 'assets/images/login_parts/parts/math.png',
                 x: 303, y: 138, w: 148.89,
-                fromX: 220,                                      // ★ NEW
-                delay: const Duration(milliseconds: 250),        // ★ NEW
+                fromX: 220,
+                delay: const Duration(milliseconds: 500),
               ),
               location_login(
                 'assets/images/login_parts/parts/watermelon.png',
                 x: -30.15, y: 227.13, w: 105,
-                fromX: -180,                                     // ★ NEW
-                delay: const Duration(milliseconds: 200),        // ★ NEW
+                fromX: -180,
+                delay: const Duration(milliseconds: 500),
               ),
               location_login(
                 'assets/images/login_parts/parts/wizard.png',
                 x: -110, y: -80, w: 450,
-                fromX: -260, fromY: -200,                        // ★ NEW
-                delay: const Duration(milliseconds: 50),         // ★ NEW
-                dur: const Duration(milliseconds: 700),          // ★ NEW
-                curve: Curves.easeOutBack,                       // ★ NEW
+                fromX: -260, fromY: -200,
+                delay: const Duration(milliseconds: 100),
+                dur: const Duration(milliseconds: 1200),
+                curve: Curves.easeOutBack,
               ),
               location_login(
                 'assets/images/login_parts/parts/al_lok_dal_lok.png',
                 x: 66, y: 325, w: 288,
-                fromY: 140,                                      // ★ NEW
-                delay: const Duration(milliseconds: 300),        // ★ NEW
+                fromY: 140,
+                delay: const Duration(milliseconds: 300),
               ),
               // ▲▲▲ 여기까지만 추가/수정. 나머지는 동일 ▲▲▲
             ],
