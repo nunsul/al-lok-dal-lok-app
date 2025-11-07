@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../Mypage/My_page.dart';
+import '../chat/Chat_main.dart';
 
 class MainBackScreen extends StatefulWidget {
   const MainBackScreen({super.key});
@@ -16,7 +17,7 @@ class _MainShellState extends State<MainBackScreen> {
   static const int _kCenterPage = 4; // 학사모 전용 페이지 인덱스
   final List<Widget> _pages = const [
     _HomePage(),
-    _ChatPage(),
+    Chat_main(),
     _GamePage(),
      My_page(),
     _CenterFabPage(),
@@ -27,12 +28,13 @@ class _MainShellState extends State<MainBackScreen> {
     final int visibleIndex = _centerSelected ? _kCenterPage : _index;
 
     return Container(
-      color: const Color(0xFFF6F7FB),
+      color: Colors.white,
       child: Padding(
         padding: const EdgeInsets.only(bottom: 30, left: 20, right: 20, top: 15),
         child: Scaffold(
-          backgroundColor: const Color(0xFFF6F7FB),
-          extendBody: true,
+          resizeToAvoidBottomInset: false,
+          backgroundColor: Colors.white,
+          extendBody: false,
 
           body: IndexedStack(index: visibleIndex, children: _pages),
 
@@ -47,9 +49,8 @@ class _MainShellState extends State<MainBackScreen> {
               elevation: 8,
               onPressed: () {
                 setState(() {
-                  _centerSelected = true; // 학사모 선택 → 센터 페이지 보이기
+                  _centerSelected = true;
                 });
-                debugPrint('Center FAB tapped');
               },
               child: const Icon(Icons.school_outlined, size: 26, color: Colors.white),
             ),
@@ -84,7 +85,6 @@ class _MainShellState extends State<MainBackScreen> {
                               _index = 0;
                               _centerSelected = false;
                             });
-                            debugPrint('tab -> 0');
                           },
                         ),
                         _NavItem(
@@ -95,7 +95,6 @@ class _MainShellState extends State<MainBackScreen> {
                               _index = 1;
                               _centerSelected = false;
                             });
-                            debugPrint('tab -> 1');
                           },
                         ),
                         const Spacer(), // FAB 자리
@@ -107,7 +106,6 @@ class _MainShellState extends State<MainBackScreen> {
                               _index = 2;
                               _centerSelected = false;
                             });
-                            debugPrint('tab -> 2');
                           },
                         ),
                         _NavItem(
@@ -118,7 +116,6 @@ class _MainShellState extends State<MainBackScreen> {
                               _index = 3;
                               _centerSelected = false;
                             });
-                            debugPrint('tab -> 3');
                           },
                         ),
                       ],
@@ -166,22 +163,13 @@ class _HomePage extends StatelessWidget {
   }
 }
 
-class _ChatPage extends StatelessWidget {
-  const _ChatPage();
-  @override
-  Widget build(BuildContext context) {
-    return const SafeArea(
-      child: Center(child: Text('채팅 페이지', style: TextStyle(fontSize: 22))),
-    );
-  }
-}
-
 class _GamePage extends StatelessWidget {
   const _GamePage();
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
-      child: Center(child: Text('게임 페이지', style: TextStyle(fontSize: 22))),
+    return Align(
+     alignment: Alignment.bottomCenter,
+     child: Text("dddddddddddd"),
     );
   }
 }
