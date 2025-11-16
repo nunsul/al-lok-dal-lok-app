@@ -34,6 +34,7 @@ flutter:
     - assets/images/login_parts/parts/watermelon.png
     - assets/images/login_parts/parts/wizard.png
     - assets/logo/logo12.png
+    - assets/image2/loginimage.png
 
 
 flutter_native_splash:
@@ -43,12 +44,12 @@ flutter_native_splash:
   color: "#FFFFFF"
   image: assets/logo/logo12.png
 
-  branding: assets/text/text4.png
+
 
   android_12:
     color: "#FFFFFF"
     image: assets/logo/logo12.png
-    branding: assets/text/text4.png
+
 
 
   fullscreen: true

@@ -30,7 +30,7 @@ class _main_loginState extends State<main_login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color(0xFFFFBC00),
+        backgroundColor: Color(0xFFFFFFFF),
         body: SafeArea(
           child: SingleChildScrollView(
               child:Center(

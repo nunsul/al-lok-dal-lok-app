@@ -11,7 +11,7 @@ class Main_Login_Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFFBC00),
+      backgroundColor: const Color(0xFFFFFFFF),
       body: Stack(
         children: [
           Figma_main_body_screen(
