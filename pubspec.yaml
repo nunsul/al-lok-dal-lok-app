@@ -33,20 +33,21 @@ flutter:
     - assets/images/login_parts/parts/star.png
     - assets/images/login_parts/parts/watermelon.png
     - assets/images/login_parts/parts/wizard.png
+    - assets/logo/logo12.png
 
 
 flutter_native_splash:
   android: true
   ios: true
 
-  color: "#FFBC00"
-  image: assets/images/logo/logo1.png
+  color: "#FFFFFF"
+  image: assets/logo/logo12.png
 
   branding: assets/text/text4.png
 
   android_12:
-    color: "#FFBC00"
-    image: assets/images/logo/logo1.png
+    color: "#FFFFFF"
+    image: assets/logo/logo12.png
     branding: assets/text/text4.png
 
 
