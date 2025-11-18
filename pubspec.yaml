@@ -33,8 +33,11 @@ flutter:
     - assets/images/login_parts/parts/star.png
     - assets/images/login_parts/parts/watermelon.png
     - assets/images/login_parts/parts/wizard.png
-    - assets/logo/logo12.png
+    - assets/logo/logo15.png
     - assets/image2/loginimage.png
+    - assets/image2/main2.png
+    - assets/image2/signup1.png
+    - assets/logo/mainlogo.png
 
 
 flutter_native_splash:
@@ -42,13 +45,13 @@ flutter_native_splash:
   ios: true
 
   color: "#FFFFFF"
-  image: assets/logo/logo12.png
+  image: assets/logo/logo15.png
 
 
 
   android_12:
     color: "#FFFFFF"
-    image: assets/logo/logo12.png
+    image: assets/logo/logo15.png
 
 
 

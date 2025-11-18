@@ -1,9 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:math_demo/login/Main_Login_Screen.dart';
-import 'package:math_demo/screen/Main_back_screen.dart';
+import 'package:math_demo/screen/2Main_back_screen.dart';
 import 'firebase_options.dart';
+import 'login/sign_up.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,7 +33,7 @@ class _MathRunAppState extends State<MathRunApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: (user==null) ? Main_Login_Screen() : MainBackScreen(),
+      home: (user==null) ? Sign_up() : Main_back_screen(),
     );
   }
 }
