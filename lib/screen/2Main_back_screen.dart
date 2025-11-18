@@ -20,7 +20,7 @@ class _Main_back_screenState extends State<Main_back_screen>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFFF5F5F5),
       body: _pages[_index],
       bottomNavigationBar: Padding(padding: EdgeInsets.only(bottom: 5),
     child:ClipRRect(

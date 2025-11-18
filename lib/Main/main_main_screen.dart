@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'main_body.dart';
+
 class main_main_screen extends StatelessWidget {
   const main_main_screen({super.key});
 
@@ -10,7 +12,8 @@ class main_main_screen extends StatelessWidget {
       length: 6,
       child: Scaffold(
         appBar: AppBar(
-          toolbarHeight: 72,
+          backgroundColor: Colors.white,
+          toolbarHeight: 50,
           leadingWidth: 140,
           leading: Padding(
             padding: const EdgeInsets.only(left: 8.0),
@@ -148,7 +151,7 @@ class main_main_screen extends StatelessWidget {
 
         body: const TabBarView(
           children: [
-            Center(child: Text('홈')),
+            main_body(),
             Center(child: Text('정치')),
             Center(child: Text('경제')),
             Center(child: Text('사회')),
